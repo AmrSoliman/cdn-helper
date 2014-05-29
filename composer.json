@@ -1,0 +1,17 @@
+{
+	"name": "npmweb/cdn-helper",
+	"description": "Laravel helper to create URLs to assets on a CDN.",
+	"type": "library",
+	"require": {
+		"laravel/framework": "4.1.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"NpmWeb\\CdnHelper\\": "src/",
+			"NpmWeb\\Test\\": "tests/"
+		},
+		"files": [
+			"src/NpmWeb/CdnHelper/helpers.php"
+		]
+	}
+}
