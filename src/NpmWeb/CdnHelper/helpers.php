@@ -32,10 +32,10 @@ if ( ! function_exists('cdn_url'))
 	function cdn_url($path = null, $whichCdn = null)
 	{
 		if( $whichCdn ) {
-			$url = Config::get('cdn.'.$whichCdn.'.base_url');
+			$url = Config::get('cdn::'.$whichCdn.'.base_url');
 		} else {
 			// assume there's just one, and not named
-			$url = Config::get('cdn.base_url');
+			$url = Config::get('cdn::base_url');
 		}
 		if( null !== $path ) {
 			$url .= $path;
