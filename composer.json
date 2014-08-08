@@ -2,6 +2,7 @@
 	"name": "npmweb/cdn-helper",
 	"description": "Laravel helper to create URLs to assets on a CDN.",
 	"type": "library",
+	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*"
 	},
