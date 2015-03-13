@@ -15,7 +15,7 @@ if ( ! function_exists('cdn_asset'))
         if($folder) {
             $url .= $folder;
         }
-        $url .= esc_url($filename);
+        $url .= urlencode($filename);
         return cdn_url($url, $whichCdn);
     }
 }
